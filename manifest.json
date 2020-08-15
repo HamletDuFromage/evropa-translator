@@ -1,0 +1,47 @@
+{
+    "manifest_version": 2,
+    "name": "Evropa Translator",
+    "version": "0.1",
+  
+    "description": "Vgh... What covld have been...",
+
+    "homepage_url":"https://github.com/HamletDuFromage/evropa-translator",
+  
+    "icons": {
+      "48": "icons/janny-48.png",
+      "96": "icons/janny-96.png"
+    },
+
+    "permissions": [
+        "activeTab", "clipboardWrite", "storage"
+      ], 
+
+    "browser_action": {
+      "default_icon": "icons/janny-32.png",
+      "default_title": "Evropa Translator",
+      "default_popup": "popup/home.html"
+    },
+
+    "content_scripts": [
+        {
+          "matches": [
+            "<all_urls>"
+          ],
+          "js": [
+            "content_scripts/inject.js"
+          ]
+        }
+    ],
+
+    "options_ui": {
+        "page": "options/options.html",
+        "browser_style": true
+      },
+
+    "browser_specific_settings": {
+      "gecko": {
+        "id": "id@id.com"
+      }
+    }
+
+  }

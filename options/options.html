@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+  </head>
+
+<body>
+    <div>You may want the filter to only apply on a selection of websites, or excluse websites. </div>
+    <div>
+        <input type="radio" id="wlt" name="mode" value="wl">
+        <label for="wl">Whitelist</label><br>
+        <textarea id="wl" cols="50" rows="5" placeholder="4channel.org"></textarea>
+    </div>
+    <div>
+        <input type="radio" id="blt" name="mode" value="bl">
+        <label for="bl">Blacklist</label><br>
+        <textarea id="bl" cols="50" rows="5" placeholder="google.com"></textarea>
+    </div>
+
+    <script>
+        document.getElementById("demo").innerHTML = "Hello JavaScript!";
+        </script> 
+  <script src="options.js"></script>
+</body>
+
+</html>
